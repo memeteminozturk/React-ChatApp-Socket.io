@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.chatlist {
+    padding: 0 0 0 10px;
+    background-color: wheat;
+    overflow: hidden;
+    background: linear-gradient(rgba(201, 201, 201, 0.262), rgba(225, 223, 223, 0.289)), url("../assets/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.chatlist>div {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    overflow: auto;
+}
+
+/* SCROLLBAR FOR CHATLIST */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: cornsilk;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.textInput {
+    border: solid 1px #ddd;
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.326);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    width: 100%;
+    border: 2px solid #fd8c8c;
+    border-top: none;
+}
+
+.textInput:focus {
+    outline: none;
+}
+
+.chatItem {
+    font-size: 18px;
+    color: #333;
+    border-radius: 8px;
+    background: #fff;
+    padding: 12px 18px;
+    border: 0.5px solid rgba(0, 0, 0, 0.02);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.08);
+    max-width: 60%;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 6px;
+    margin-right: auto;
+    word-wrap: break-word;
+}
+
+.chatItem.right {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+}
+
+.form {
+    position: relative;
+}
